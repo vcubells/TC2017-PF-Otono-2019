@@ -5,8 +5,8 @@
 ##### Campus: *[Poner aquí su campus]*
 
 ##### Integrantes:
-1. *[Poner aquí Nombre y Apellidos del integrante 1]*
-2. *[Poner aquí Nombre y Apellidos del integrante 2]*
+1. *[Poner aquí Nombre y Apellidos del integrante 1]* *[Matrícula]*
+2. *[Poner aquí Nombre y Apellidos del integrante 2]* *[Matrícula]*
 
 ---
 ## 1. Aspectos generales
@@ -15,28 +15,18 @@
 
 A continuación se mencionan los requerimientos técnicos mínimos del proyecto, favor de tenerlos presente para que cumpla con todos.
 
-* El equipo tiene la libertad de elegir las tecnologías de desarrollo a utilizar en el proyecto, sin embargo, debe tener presente que la solución final se deberá ejecutar en una de las siguientes plataformas en la nube: [Google Cloud Platform](https://cloud.google.com/?hl=es), [Amazon Web Services](https://aws.amazon.com/) o [Microsoft Azure](https://azure.microsoft.com/es-mx/).
-* El proyecto deberá utilizar 
-* La solución debe utilizar una arquitectura de microservicios. Si no tiene conocimiento sobre este tema, le recomendamos la lectura [*Microservices*](https://martinfowler.com/articles/microservices.html) de [Martin Fowler](https://martinfowler.com).
-* La arquitectura debe ser modular, escalable, con redundancia y alta disponibilidad.
-* La arquitectura deberá estar separada claramente por capas (*frontend*, *backend*, *API RESTful*, datos y almacenamiento).
-* Deberá utilizarse contenedores [Docker](https://www.docker.com/) y un orquestador como [Kubernetes](https://kubernetes.io/).
-* La API deberá utilizar autenticación y estar desplegada detrás de un API Manager como [Cloud Endpoints](https://cloud.google.com/endpoints/).
-* El proyecto deberá contar con los archivos de configuración y *scripts* necesarios para crear toda la infraestructura necesaria, utilizando alguna solución de *Infraestructure as a Code* como [Deployment Manager](https://cloud.google.com/deployment-manager/).
-* Todo el código, *datasets* y la documentación del proyecto debe alojarse en este repositorio de GitHub. Favor de mantener la estructura de carpetas propuesta.
+* El equipo tiene la libertad de elegir el problema a resolver.
+* El proyecto deberá utilizar [OpenMP](https://www.openmp.org/) para la implementación del código paralelo.
+* Todo el código y la documentación del proyecto debe alojarse en este repositorio de GitHub. Favor de mantener la estructura de carpetas propuesta.
 
 ### 1.2 Estructura del repositorio
 El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos por usted:
 ```
 - / 			        # Raíz de todo el proyecto
     - README.md			# Archivo con los datos del proyecto (este archivo)
-    - frontend			# Carpeta con la solución del frontend (Web app)
-    - backend			  # Carpeta con la solución del backend (CMS)
-    - api			      # Carpeta con la solución de la API
-    - datasets		  # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
-    - dbs			      # Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
-    - models			  # Carpeta donde se almacenarán los modelos de Machine Learning ya entrenados
-    - docs			    # Carpeta con la documentación del proyecto
+    - secuencial		# Carpeta con la solución del frontend (Web app)
+    - paralelo			# Carpeta con la solución del backend (CMS)
+    - docs			    # Carpeta con los documentos, tablas, gráficas, imágenes
 ```
 
 ### 1.3 Documentación  del proyecto
@@ -44,73 +34,47 @@ El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos p
 Como parte de la entrega final del proyecto, se debe incluir la siguiente información:
 
 * Descripción del problema a resolver.
-* Diagrama con la arquitectura de la solución.
-* Descripción de cada uno de los componentes de la arquitectura.
-* Justificación de los componentes seleccionados.
-* Explicación del flujo de información en la arquitectura.
-* Descripción de las fuentes de información utilizadas (archivos CSV, JSON, TXT, bases de datos, entre otras).
-* Guía de configuración, instalación y despliegue de la solución en la plataforma en la nube seleccionada.
-* Documentación de la API. Puede ver un ejemplo en [Swagger](https://swagger.io/). 
+* Descripción de la solución secuencial con referencia (enlace) al código secuencial alojado en la carpeta [secuencial](secuencial/).
+* Análisis de los inhibidores de paralelismo presente y una explicación de cómo se solucionaron.
+* Descripción de la solución paralela con referencia (enlace) al código paralelo alojado en la carpeta [paralelo](paralelo/).
+* Tabla de resultados con los tiempos de ejecución medidos para cada variante de la solución secuencial vs la solución paralela tenidendo en cuenta: 5 tamaños diferentes de las entradas, 5 opciones diferentes de números de CPU (threads), 4 ocpiones diferentes de balanceo (*auto, guided, static, dynamic*).
+* Gráfica(s) comparativa(s) de los resultados obtenidos en las mediciones.
+* Interpretación de los resultados obtenidos.
+* Guía paso a paso para la ejecución del código y replicar los resultados obtenidos.
 * El código debe estar documentado siguiendo los estándares definidos para el lenguaje de programación seleccionado.
 
-## 2. Descripción del proyecto
+## 2. Descripción del problema
 
-*[Incluya aquí la descripción del proyecto.]*
+*[Incluya aquí la descripción del problema a resolver.]*
 
-## 3. Solución
+## 3. Solución secuencial
 
-A continuación aparecen descritos los diferentes elementos que forman parte de la solución del proyecto.
+*[Incluya aquí la descripción de la solución secuencial.]*
 
-### 3.1 Arquitectura de la solución
+## 4. Análisis de los inhibidores del paralelismo
 
-*[Incluya aquí un diagrama donde se aprecie la arquitectura de la solución propuesta, así como la interacción entre los diferentes componentes de la misma.]*
+*[Incluya aquí el análisis de los inhibidores presentes en su problema, así como la solución a los mismos.]*
 
-*[Incluya una explicación del flujo de la información entre los diferentes componentes.]*
+## 5. Solución paralela
 
-### 3.2 Descripción de los componentes
+*[Incluya aquí la descripción de la solución paralela.]*
 
-*[Incluya aquí una descripción detallada de cada uno de los componentes de la arquitectura así como una justificación de la selección de cada componente]*
+## 6. Tabla de resultados
 
-### 3.3 Frontend
+*[Incluya aquí la tabla con los resultados de las mediciones.]*
 
-*[Incluya aquí una explicación de la solución utilizada para el frontend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+## 7. Gráfica(s) comparativa(s)
 
-#### 3.3.1 Lenguaje de programación
-#### 3.3.2 Framework
-#### 3.3.3 Librerías de funciones o dependencias
+*[Incluya aquí la(s) gráfica(s) comparativa(s).]*
 
-### 3.4 Backend
+## 8. Interpretación de los resultados
 
-*[Incluya aquí una explicación de la solución utilizada para el backend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+*[Incluya aquí la interpretación de los resultados.]*
 
-#### 3.4.1 Lenguaje de programación
-#### 3.4.2 Framework
-#### 3.4.3 Librerías de funciones o dependencias
+## 9. Guía paso a paso
 
-### 3.5 API
+*[Incluya aquí la guía para la ejecución de los códigos.]*
 
-*[Incluya aquí una explicación de la solución utilizada para implementar la API del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+## 10. Referencias
 
-#### 3.5.1 Lenguaje de programación
-#### 3.5.2 Framework
-#### 3.5.3 Librerías de funciones o dependencias
-
-*[Incluya aquí una explicación de cada uno de los endpoints que forman parte de la API. Cada endpoint debe estar correctamente documentado.]*
-
-*[Por cada endpoint debe incluir lo siguiente:]*
-
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**: 
-* **Formato JSON de la respuesta**:
-
-
-## 3.6 Pasos a seguir para utilizar el proyecto
-
-*[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación de este repositorio hasta el despliegue de la solución en una plataforma en la nube.]*
-
-## 4. Referencias
-
-*[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+*[Incluya aquí las referencias a sitios de interés y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
