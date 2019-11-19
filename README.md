@@ -13,9 +13,9 @@
 ---
 ## 1. Aspectos generales
 
-### 1.1 Requerimientos técnicos
+### 1.1 Requerimientos
 
-A continuación se mencionan los requerimientos técnicos mínimos del proyecto, favor de tenerlos presente para que cumpla con todos.
+A continuación se mencionan los requerimientos mínimos del proyecto, favor de tenerlos presente para que cumpla con todos.
 
 * El equipo tiene la libertad de elegir el problema a resolver.
 * El proyecto deberá utilizar [OpenMP](https://www.openmp.org/) para la implementación del código paralelo.
@@ -28,7 +28,7 @@ El proyecto debe seguir la siguiente estructura de carpetas:
     - README.md			# este archivo
     - secuencial		# Carpeta con la solución secuencial
     - paralelo			# Carpeta con la solución paralela
-    - docs          # Carpeta con los documentos, tablas, gráficas, imágenes
+    - docs              # Carpeta con los documentos, tablas, gráficas, imágenes
 ```
 
 ### 1.3 Documentación  del proyecto
