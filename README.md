@@ -1,8 +1,10 @@
 # *[Poner aquí el Título del Proyecto]*
 ---
-#### Materia: *[Poner aquí nombre de la materia]*
+#### Materia: *Análisis y Diseño de Algoritmos (TC2017)*
 
-##### Campus: *[Poner aquí su campus]*
+#### Semestre: *Otoño 2019*
+
+##### Campus: *Santa Fe*
 
 ##### Integrantes:
 1. *[Poner aquí Nombre y Apellidos del integrante 1]* *[Matrícula]*
@@ -20,13 +22,13 @@ A continuación se mencionan los requerimientos técnicos mínimos del proyecto,
 * Todo el código y la documentación del proyecto debe alojarse en este repositorio de GitHub. Favor de mantener la estructura de carpetas propuesta.
 
 ### 1.2 Estructura del repositorio
-El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos por usted:
+El proyecto debe seguir la siguiente estructura de carpetas:
 ```
 - / 			        # Raíz de todo el proyecto
-    - README.md			# Archivo con los datos del proyecto (este archivo)
-    - secuencial		# Carpeta con la solución del frontend (Web app)
-    - paralelo			# Carpeta con la solución del backend (CMS)
-    - docs			    # Carpeta con los documentos, tablas, gráficas, imágenes
+    - README.md			# este archivo
+    - secuencial		# Carpeta con la solución secuencial
+    - paralelo			# Carpeta con la solución paralela
+    - docs          # Carpeta con los documentos, tablas, gráficas, imágenes
 ```
 
 ### 1.3 Documentación  del proyecto
@@ -37,7 +39,7 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 * Descripción de la solución secuencial con referencia (enlace) al código secuencial alojado en la carpeta [secuencial](secuencial/).
 * Análisis de los inhibidores de paralelismo presente y una explicación de cómo se solucionaron.
 * Descripción de la solución paralela con referencia (enlace) al código paralelo alojado en la carpeta [paralelo](paralelo/).
-* Tabla de resultados con los tiempos de ejecución medidos para cada variante de la solución secuencial vs la solución paralela tenidendo en cuenta: 5 tamaños diferentes de las entradas, 5 opciones diferentes de números de CPU (threads), 4 ocpiones diferentes de balanceo (*auto, guided, static, dynamic*).
+* Tabla de resultados con los tiempos de ejecución medidos para cada variante de la solución secuencial vs. la solución paralela, teniendo en cuenta: 5 tamaños diferentes de las entradas, 5 opciones diferentes de números de CPU (threads), 4 ocpiones diferentes de balanceo (*auto, guided, static, dynamic*).
 * Gráfica(s) comparativa(s) de los resultados obtenidos en las mediciones.
 * Interpretación de los resultados obtenidos.
 * Guía paso a paso para la ejecución del código y replicar los resultados obtenidos.
